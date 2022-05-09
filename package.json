@@ -1,0 +1,23 @@
+{
+  "name": "atem-electron",
+  "version": "1.0.0",
+  "description": "Control panel for ATEM switchers with extra functionality for SuperSource(s)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qqquiu/atem-electron.git"
+  },
+  "author": "quiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qqquiu/atem-electron/issues"
+  },
+  "homepage": "https://github.com/qqquiu/atem-electron#readme",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
+}
