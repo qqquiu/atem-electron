@@ -1,0 +1,96 @@
+:root
+{
+  --bg-color: rgb(34, 34, 34);
+  --row-color: rgb(17, 17, 17);
+  --white-text: rgb(238, 238, 238);
+  --button-text: rgb(17, 17, 17);
+  --button-color: rgb(220, 220, 220);
+  --button-border: rgb(160, 160, 160);
+  --onair-color: rgb(255, 131, 129);
+  --onair-border: rgb(255, 61, 46);
+  --pvw-color: rgb(103, 238, 97);
+  --pvw-border: rgb(0, 222, 4);
+  --aux-color: rgb(255, 211, 117);
+  --aux-border: rgb(255, 168, 52);
+}
+
+body
+{
+  background-color: #222222;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--white-text);
+}
+
+.PanelButton
+{
+  position: static;
+  width: 64px;
+  height: 64px;
+  background: var(--button-color);
+  border: 2px solid var(--button-border);
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+  transition: background 0.01s ease-in-out 0s;
+  color: var(--button-text);
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: .8rem;
+  line-height: 1.5rem;
+  text-align: center;
+  overflow: hidden;
+  margin-right: 4px;
+}
+
+.PanelButton.Preview.Active
+{
+  background-color: var(--pvw-color);
+  border-color: var(--pvw-border);
+}
+
+.PanelButton.Preview:active
+{
+  background-color: var(--pvw-color);
+  border-color: var(--pvw-border);
+}
+
+.PanelButton.Program
+{
+  background-color: var(--onair-color);
+  border-color: var(--onair-border);
+}
+
+.PanelButton.Aux
+{
+  background-color: var(--aux-color);
+  border-color: var(--aux-border)
+}
+
+.PanelButton:hover
+{
+  background: rgb(255, 255, 255);
+}
+
+.PanelButton:active
+{
+  border-color: #ff3d2e;
+  background-color: #ff8381;
+}
+
+.PanelButton:focus
+{
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+#PreviewBus
+{
+  border-radius: 24px;
+  padding: 24px;
+  background: #111111;
+}
+
+.PreviewRow
+{
+    white-space: nowrap;
+}

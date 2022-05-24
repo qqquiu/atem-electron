@@ -4,10 +4,17 @@ const path = require('path')
 const createWindow = () => {
     const win = new BrowserWindow({
         width: 1280,
-        height: 720
+        height: 720,
+        show: false,
+        title: "ATEM Electron Panel",
+        
     })
 
     win.loadFile('index.html')
+
+    win.once('ready-to-show', () => {
+        win.show()
+    })
 }
 
 app.whenReady().then(() => {
